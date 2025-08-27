@@ -13,7 +13,6 @@ function prettyUrl(u: string) {
     const url = new URL(u);
     return url.host + url.pathname.replace(/\/$/, "");
   } catch {
-    // If it's missing protocol, show raw trimmed
     return u.replace(/^https?:\/\//, "").replace(/\/$/, "");
   }
 }
@@ -33,41 +32,38 @@ export default function ProjectPage() {
       {project && (
         <div className="flex flex-col items-center p-4 gap-8 py-8 w-full max-w-5xl mx-auto">
           {/* Title */}
-          <p className="font-extrabold text-3xl sm:text-5xl text-center">
-            {project.name}
-          </p>
-
-          {/* Year + Tech tags */}
-          <div className="flex flex-wrap gap-2 justify-center">
-            <p className="bg-blue-200 px-3 py-1 text-lg sm:text-xl rounded-md">
-              {project.year}
-            </p>
-            {project.technologies.map((item, index) => (
-              <div
-                className="bg-gray-100 px-3 py-1 text-lg sm:text-xl rounded-md"
-                key={index}
-              >
-                {item}
-              </div>
-            ))}
+          <div className="text-center">
+            <h1 className="font-extrabold text-4xl sm:text-6xl tracking-tight">
+              {project.name}
+            </h1>
+            <p className="mt-2 text-gray-500 text-lg">{project.year}</p>
           </div>
 
-          {/* Links top */}
+          {/* Year (small, subtle) */}
+          {/* <div className="text-center">
+            <span className="inline-block rounded-md bg-blue-100 px-3 py-1 text-sm sm:text-base text-blue-800">
+              {project.year}
+            </span>
+          </div> */}
+
+          {/* Primary Links — make these the star */}
           {project.links?.length > 0 && (
-            <div className="flex flex-wrap gap-3 justify-center">
-              {project.links.map((link, index) => (
-                <a
-                  key={index}
-                  href={link.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-white px-4 py-2 border border-gray-300 hover:border-blue-400 hover:bg-blue-50 
-                 font-medium flex flex-row items-center gap-2 rounded-lg cursor-pointer shadow-sm transition text-xl"
-                >
-                  <FaExternalLinkAlt className="text-blue-600" />
-                  <span>{link.label}</span>
-                </a>
-              ))}
+            <div className="w-full sm:w-4/5 lg:w-2/3">
+              <div className="flex flex-wrap justify-center gap-3">
+                {project.links.map((link, index) => (
+                  <a
+                    key={index}
+                    href={link.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 rounded-lg bg-blue-600 px-4 py-2 text-white
+                               hover:bg-blue-700 active:bg-blue-800 transition shadow"
+                  >
+                    <FaExternalLinkAlt aria-hidden />
+                    <span className="font-semibold">{link.label}</span>
+                  </a>
+                ))}
+              </div>
             </div>
           )}
 
@@ -112,22 +108,22 @@ export default function ProjectPage() {
             </div>
           ))}
 
-          {/* Links btm */}
-          {project.links?.length > 0 && (
-            <div className="flex flex-wrap gap-3 justify-center">
-              {project.links.map((link, index) => (
-                <a
-                  key={index}
-                  href={link.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-white px-4 py-2 border border-gray-300 hover:border-blue-400 hover:bg-blue-50 
-                 font-medium flex flex-row items-center gap-2 rounded-lg cursor-pointer shadow-sm transition text-xl"
-                >
-                  <FaExternalLinkAlt className="text-blue-600" />
-                  <span>{link.label}</span>
-                </a>
-              ))}
+          {/* Tech stack (secondary, muted, same width as links to keep the pyramid) */}
+          {project.technologies?.length > 0 && (
+            <div className="w-full sm:w-4/5 lg:w-2/3">
+              <h3 className="text-base font-semibold text-gray-600 mb-2 uppercase tracking-wide">
+                Tech Stack
+              </h3>
+              <div className="flex flex-wrap gap-2">
+                {project.technologies.map((item, index) => (
+                  <span
+                    key={index}
+                    className="rounded-md border border-gray-200 bg-gray-50 px-2.5 py-1 text-xs sm:text-sm text-gray-700"
+                  >
+                    {item}
+                  </span>
+                ))}
+              </div>
             </div>
           )}
         </div>
