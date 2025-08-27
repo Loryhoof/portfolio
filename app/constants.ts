@@ -247,4 +247,41 @@ export const PROJECTS: ProjectData[] = [
       },
     ],
   },
+
+  {
+    name: "Video Transcriber",
+    thumbnail_description: "YT video transcriber Node.js library",
+    thumbnail_image: "/projects/transcriber.png",
+    images: [],
+    year: 2023,
+    technologies: ["TypeScript", "Node.js"],
+    path: "yt-transcribe",
+    description: {
+      sections: [
+        {
+          contentType: "text",
+          content: `yt-transcribe is a small Node.js library I built to fetch and transcribe captions from YouTube videos programmatically. The goal was to make it easy for developers to pull transcripts directly into their applications without needing to deal with the raw XML YouTube provides.`,
+        },
+        { contentType: "image", content: "/projects/transcriber.png" },
+        {
+          contentType: "text",
+          content: `The package uses node-fetch for HTTP requests, xmldom for parsing XML captions, and he for decoding special characters. It returns clean, ready-to-use transcript text through a simple async API.`,
+        },
+        {
+          contentType: "text",
+          content: `It’s available on npm (yt-transcribe) and has been downloaded and used by other developers in their projects. Building this library gave me more experience in publishing Node.js packages, API design, and handling external data formats.`,
+        },
+      ],
+    },
+    links: [
+      {
+        label: "GitHub Project:",
+        url: "https://github.com/Loryhoof/yt-transcribe",
+      },
+      {
+        label: "npm Package:",
+        url: "https://www.npmjs.com/package/yt-transcribe",
+      },
+    ],
+  },
 ];
