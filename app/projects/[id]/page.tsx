@@ -6,6 +6,17 @@ import { PROJECTS } from "@/app/constants";
 import { ProjectData } from "@/app/types/types";
 import { useParams, useRouter } from "next/navigation";
 import { useEffect } from "react";
+import { FaExternalLinkAlt } from "react-icons/fa";
+
+function prettyUrl(u: string) {
+  try {
+    const url = new URL(u);
+    return url.host + url.pathname.replace(/\/$/, "");
+  } catch {
+    // If it's missing protocol, show raw trimmed
+    return u.replace(/^https?:\/\//, "").replace(/\/$/, "");
+  }
+}
 
 export default function ProjectPage() {
   const router = useRouter();
@@ -40,6 +51,25 @@ export default function ProjectPage() {
               </div>
             ))}
           </div>
+
+          {/* Links top */}
+          {project.links?.length > 0 && (
+            <div className="flex flex-wrap gap-3 justify-center">
+              {project.links.map((link, index) => (
+                <a
+                  key={index}
+                  href={link.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-white px-4 py-2 border border-gray-300 hover:border-blue-400 hover:bg-blue-50 
+                 font-medium flex flex-row items-center gap-2 rounded-lg cursor-pointer shadow-sm transition text-xl"
+                >
+                  <FaExternalLinkAlt className="text-blue-600" />
+                  <span>{link.label}</span>
+                </a>
+              ))}
+            </div>
+          )}
 
           {/* Description sections */}
           {project.description.sections.map((section, index) => (
@@ -82,27 +112,24 @@ export default function ProjectPage() {
             </div>
           ))}
 
-          {/* Links section */}
-          <div className="font-extrabold text-2xl sm:text-3xl w-full sm:w-4/5 lg:w-2/3 flex flex-col gap-2">
-            {project.links.map((link, index) => (
-              <div
-                className="flex flex-col sm:flex-row gap-1 sm:gap-2"
-                key={index}
-              >
-                <div className="flex flex-col">
-                  <p className="font-normal">{link.label}</p>
-                  <a
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-600 hover:text-blue-800 font-normal break-all"
-                    href={link.url}
-                  >
-                    {link.url}
-                  </a>
-                </div>
-              </div>
-            ))}
-          </div>
+          {/* Links btm */}
+          {project.links?.length > 0 && (
+            <div className="flex flex-wrap gap-3 justify-center">
+              {project.links.map((link, index) => (
+                <a
+                  key={index}
+                  href={link.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-white px-4 py-2 border border-gray-300 hover:border-blue-400 hover:bg-blue-50 
+                 font-medium flex flex-row items-center gap-2 rounded-lg cursor-pointer shadow-sm transition text-xl"
+                >
+                  <FaExternalLinkAlt className="text-blue-600" />
+                  <span>{link.label}</span>
+                </a>
+              ))}
+            </div>
+          )}
         </div>
       )}
 
