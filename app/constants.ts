@@ -130,7 +130,7 @@ export const PROJECTS: ProjectData[] = [
     },
     links: [
       { label: "Demo link", url: "https://bonkers-ts.vercel.app/" },
-      { label: "Github", url: "https://github.com/Loryhoof/bonkers2/" },
+      { label: "GitHub", url: "https://github.com/Loryhoof/bonkers2/" },
     ],
   },
 
@@ -287,7 +287,7 @@ export const PROJECTS: ProjectData[] = [
         url: "https://github.com/Loryhoof/yt-transcribe",
       },
       {
-        label: "npm Package",
+        label: "NPM Package",
         url: "https://www.npmjs.com/package/yt-transcribe",
       },
     ],
