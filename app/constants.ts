@@ -21,7 +21,7 @@ export const PROJECTS: ProjectData[] = [
       sections: [
         {
           contentType: "text",
-          content: `Kubegame is a browser-based multiplayer sandbox game inspired by open-world titles like GTA. It\"s the biggest Three.js project I\"ve worked on so far and was my way of really diving deep into web-based 3D, multiplayer networking, and game systems.`,
+          content: `Kubegame is a browser-based multiplayer sandbox game inspired by open-world titles like GTA. It&apos;s the biggest Three.js project I&apos;ve worked on so far and was my way of really diving deep into web-based 3D, multiplayer networking, and game systems.`,
         },
         { contentType: "image", content: "/projects/kube.jpg" },
         {
@@ -41,7 +41,7 @@ export const PROJECTS: ProjectData[] = [
         {
           contentType: "text",
           content:
-            'I"m also currently running a YouTube devlog series on the project, where I share progress, challenges, and technical breakdowns as I continue developing the game.',
+            "I&apos;m also currently running a YouTube devlog series on the project, where I share progress, challenges, and technical breakdowns as I continue developing the game.",
         },
       ],
     },
@@ -227,7 +227,7 @@ export const PROJECTS: ProjectData[] = [
       sections: [
         {
           contentType: "text",
-          content: `This is a simple language learning webapp I built because I wanted to practice Thai, which wasn\"t available on Duolingo. I decided to create my own tool with a few other languages included as well (Thai, Russian, Arabic, and Vietnamese).`,
+          content: `This is a simple language learning webapp I built because I wanted to practice Thai, which wasn&apos;t available on Duolingo. I decided to create my own tool with a few other languages included as well (Thai, Russian, Arabic, and Vietnamese).`,
         },
         { contentType: "image", content: "/projects/thai.jpg" },
         {
@@ -236,7 +236,7 @@ export const PROJECTS: ProjectData[] = [
         },
         {
           contentType: "text",
-          content: `I built the frontend with React/Next.js and Tailwind for a clean and responsive design, and a Node.js backend to handle content and exercises. Even though it\"s a small project, it was fun to build and useful for my own studies, while giving me practice in structuring interactive learning tools for the web.`,
+          content: `I built the frontend with React/Next.js and Tailwind for a clean and responsive design, and a Node.js backend to handle content and exercises. Even though it&apos;s a small project, it was fun to build and useful for my own studies, while giving me practice in structuring interactive learning tools for the web.`,
         },
       ],
     },
@@ -269,7 +269,7 @@ export const PROJECTS: ProjectData[] = [
         },
         {
           contentType: "text",
-          content: `It’s available on npm (yt-transcribe) and has been downloaded and used by other developers in their projects. Building this library gave me more experience in publishing Node.js packages, API design, and handling external data formats.`,
+          content: `Its available on npm (yt-transcribe) and has been downloaded and used by other developers in their projects. Building this library gave me more experience in publishing Node.js packages, API design, and handling external data formats.`,
         },
       ],
     },
