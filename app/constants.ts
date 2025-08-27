@@ -284,4 +284,41 @@ export const PROJECTS: ProjectData[] = [
       },
     ],
   },
+
+  {
+    name: "Portfolio Website",
+    thumbnail_description: "A Next.js portfolio website",
+    thumbnail_image: "/projects/portfolio.png",
+    images: [],
+    year: 2025,
+    technologies: ["TypeScript", "Next.js", "React", "Tailwind"],
+    path: "portfolio",
+    description: {
+      sections: [
+        {
+          contentType: "text",
+          content: `This is the personal portfolio website I built to showcase my projects, skills, and experience. It’s designed to be simple, fast, and easy to navigate, while still being visually appealing.`,
+        },
+        { contentType: "image", content: "/projects/portfolio.png" },
+        {
+          contentType: "text",
+          content: `The site is built with Next.js and TypeScript, with Tailwind used for styling and responsive design. It features dynamic project pages, reusable components, and a clean layout optimized for both desktop and mobile.`,
+        },
+        {
+          contentType: "text",
+          content: `Building this portfolio gave me a chance to refine my frontend workflow, practice modern React patterns, and organize my work into a professional presentation for clients and employers.`,
+        },
+      ],
+    },
+    links: [
+      {
+        label: "Live link:",
+        url: "http://kevinklatt.de",
+      },
+      {
+        label: "GitHub Project:",
+        url: "https://github.com/Loryhoof/portfolio",
+      },
+    ],
+  },
 ];

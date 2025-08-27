@@ -89,15 +89,17 @@ export default function ProjectPage() {
                 className="flex flex-col sm:flex-row gap-1 sm:gap-2"
                 key={index}
               >
-                <p className="font-normal">{link.label}</p>
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-600 hover:text-blue-800 font-normal break-all"
-                  href={link.url}
-                >
-                  {link.url}
-                </a>
+                <div className="flex flex-col">
+                  <p className="font-normal">{link.label}</p>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 hover:text-blue-800 font-normal break-all"
+                    href={link.url}
+                  >
+                    {link.url}
+                  </a>
+                </div>
               </div>
             ))}
           </div>
