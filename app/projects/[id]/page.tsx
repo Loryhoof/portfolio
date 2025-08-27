@@ -33,20 +33,29 @@ export default function ProjectPage() {
         <div className="flex flex-col items-center p-4 gap-8 py-8 w-full max-w-5xl mx-auto">
           {/* Title */}
           <div className="text-center">
-            <h1 className="font-extrabold text-4xl sm:text-6xl tracking-tight">
+            <h1 className="font-extrabold text-5xl sm:text-6xl tracking-tight">
               {project.name}
             </h1>
             <p className="mt-2 text-gray-500 text-lg">{project.year}</p>
           </div>
 
-          {/* Year (small, subtle) */}
-          {/* <div className="text-center">
-            <span className="inline-block rounded-md bg-blue-100 px-3 py-1 text-sm sm:text-base text-blue-800">
-              {project.year}
-            </span>
-          </div> */}
+          {/* Tech stack (up top, subtle) */}
+          {project.technologies?.length > 0 && (
+            <div className="w-full">
+              <div className="flex flex-wrap justify-center gap-2">
+                {project.technologies.map((item, index) => (
+                  <span
+                    key={index}
+                    className="rounded-md border border-gray-200 bg-gray-50 px-2.5 py-1 text-xs sm:text-sm text-gray-700"
+                  >
+                    {item}
+                  </span>
+                ))}
+              </div>
+            </div>
+          )}
 
-          {/* Primary Links — make these the star */}
+          {/* Links (primary CTAs) */}
           {project.links?.length > 0 && (
             <div className="w-full sm:w-4/5 lg:w-2/3">
               <div className="flex flex-wrap justify-center gap-3">
@@ -107,25 +116,6 @@ export default function ProjectPage() {
               )}
             </div>
           ))}
-
-          {/* Tech stack (secondary, muted, same width as links to keep the pyramid) */}
-          {project.technologies?.length > 0 && (
-            <div className="w-full sm:w-4/5 lg:w-2/3">
-              <h3 className="text-base font-semibold text-gray-600 mb-2 uppercase tracking-wide">
-                Tech Stack
-              </h3>
-              <div className="flex flex-wrap gap-2">
-                {project.technologies.map((item, index) => (
-                  <span
-                    key={index}
-                    className="rounded-md border border-gray-200 bg-gray-50 px-2.5 py-1 text-xs sm:text-sm text-gray-700"
-                  >
-                    {item}
-                  </span>
-                ))}
-              </div>
-            </div>
-          )}
         </div>
       )}
 
