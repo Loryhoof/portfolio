@@ -28,6 +28,9 @@ export const PROJECTS: ProjectData[] = [
           contentType: "text",
           content: `The frontend is built with Three.js + TypeScript for rendering, input, and UI, while the backend runs on Node.js with Rapier3D handling server-authoritative physics. The game server runs at a 30Hz tick rate and uses prediction and reconciliation to keep controls feeling responsive while dealing with latency and desync.`,
         },
+        { contentType: "image", content: "/projects/kube_2.png" },
+        { contentType: "image", content: "/projects/kube_3.png" },
+        { contentType: "image", content: "/projects/kube_4.png" },
         {
           contentType: "text",
           content: `Real-time communication is handled with Socket.io, and the whole thing runs on a DigitalOcean droplet. Working on Kubegame taught me a lot about multiplayer architecture, physics simulation, and techniques like interpolation, extrapolation, and lag compensation to make online play feel smooth.`,
@@ -107,6 +110,7 @@ export const PROJECTS: ProjectData[] = [
           content: `Bonkers is a first-person survival game inspired by Rust. The idea was to build a proper survival experience directly in the browser, complete with infinite terrain, resource gathering, and survival mechanics. It’s one of the most technically challenging projects I’ve worked on so far.`,
         },
         { contentType: "image", content: "/projects/bonkers.jpg" },
+        { contentType: "image", content: "/projects/bonkers_2.jpg" },
         {
           contentType: "text",
           content: `The core feature is the infinite procedurally generated terrain. The generation itself runs in Rust for speed and efficiency, then the data is streamed to the frontend where it gets rendered in Three.js. This setup makes it possible to generate massive worlds without choking performance in the browser.`,
@@ -124,7 +128,10 @@ export const PROJECTS: ProjectData[] = [
         },
       ],
     },
-    links: [],
+    links: [
+      { label: "Demo link", url: "https://bonkers-ts.vercel.app/" },
+      { label: "Github", url: "https://github.com/Loryhoof/bonkers2/" },
+    ],
   },
 
   {
