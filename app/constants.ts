@@ -53,6 +53,10 @@ export const PROJECTS: ProjectData[] = [
         label: "Demo link",
         url: "https://kubegame.com/",
       },
+      {
+        label: "GitHub",
+        url: "https://github.com/Loryhoof/kubegame",
+      },
     ],
   },
   {
@@ -220,6 +224,7 @@ export const PROJECTS: ProjectData[] = [
         label: "Live link",
         url: "https://fantasysnaps-git-main-kevins-projects-190bf2e4.vercel.app/",
       },
+      { label: "GitHub", url: "https://github.com/Loryhoof/nextjs-saas" },
     ],
   },
 

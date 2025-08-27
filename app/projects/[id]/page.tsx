@@ -36,13 +36,16 @@ export default function ProjectPage() {
             <h1 className="font-extrabold text-5xl sm:text-6xl tracking-tight">
               {project.name}
             </h1>
-            <p className="mt-2 text-gray-500 text-lg">{project.year}</p>
           </div>
 
           {/* Tech stack (up top, subtle) */}
           {project.technologies?.length > 0 && (
             <div className="w-full">
               <div className="flex flex-wrap justify-center gap-2">
+                <p className="rounded-md border border-blue-200 bg-blue-200 px-2.5 py-1 text-xs sm:text-sm text-blue-700">
+                  {project.year}
+                </p>
+
                 {project.technologies.map((item, index) => (
                   <span
                     key={index}
