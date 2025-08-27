@@ -107,7 +107,7 @@ export const PROJECTS: ProjectData[] = [
       sections: [
         {
           contentType: "text",
-          content: `Bonkers is a first-person survival game inspired by Rust. The idea was to build a proper survival experience directly in the browser, complete with infinite terrain, resource gathering, and survival mechanics. It’s one of the most technically challenging projects I’ve worked on so far.`,
+          content: `Bonkers is a first-person survival game inspired by the game called Rust. The idea was to build a proper survival experience directly in the browser, complete with infinite terrain, resource gathering, and survival mechanics. It’s one of the most technically challenging projects I’ve worked on so far.`,
         },
         { contentType: "image", content: "/projects/bonkers.jpg" },
         { contentType: "image", content: "/projects/bonkers_2.jpg" },
