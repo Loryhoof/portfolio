@@ -287,7 +287,7 @@ export const PROJECTS: ProjectData[] = [
         url: "https://github.com/Loryhoof/yt-transcribe",
       },
       {
-        label: "NPM Package",
+        label: "npm Package",
         url: "https://www.npmjs.com/package/yt-transcribe",
       },
     ],
