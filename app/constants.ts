@@ -50,7 +50,7 @@ export const PROJECTS: ProjectData[] = [
     },
     links: [
       {
-        label: "Demo link:",
+        label: "Demo link",
         url: "https://kubegame.com/",
       },
     ],
@@ -90,7 +90,7 @@ export const PROJECTS: ProjectData[] = [
     },
     links: [
       {
-        label: "Demo link:",
+        label: "Demo link",
         url: "https://crooktown.github.io/",
       },
     ],
@@ -172,7 +172,7 @@ export const PROJECTS: ProjectData[] = [
     },
     links: [
       {
-        label: "Live link:",
+        label: "Live link",
         url: "https://cuti-acc-test.vercel.app/",
       },
     ],
@@ -217,7 +217,7 @@ export const PROJECTS: ProjectData[] = [
     },
     links: [
       {
-        label: "Live link:",
+        label: "Live link",
         url: "https://fantasysnaps-git-main-kevins-projects-190bf2e4.vercel.app/",
       },
     ],
@@ -250,7 +250,7 @@ export const PROJECTS: ProjectData[] = [
     },
     links: [
       {
-        label: "Live link:",
+        label: "Live link",
         url: "https://thai-learn.vercel.app/",
       },
     ],
@@ -283,11 +283,11 @@ export const PROJECTS: ProjectData[] = [
     },
     links: [
       {
-        label: "GitHub Project:",
+        label: "GitHub",
         url: "https://github.com/Loryhoof/yt-transcribe",
       },
       {
-        label: "npm Package:",
+        label: "npm Package",
         url: "https://www.npmjs.com/package/yt-transcribe",
       },
     ],
@@ -320,7 +320,7 @@ export const PROJECTS: ProjectData[] = [
     },
     links: [
       {
-        label: "GitHub Project:",
+        label: "GitHub",
         url: "https://github.com/Loryhoof/portfolio",
       },
     ],
