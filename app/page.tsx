@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Socials from "./components/Socials";
 
 export default function Home() {
@@ -13,7 +14,7 @@ export default function Home() {
       {/* Text Content */}
       <div className="flex flex-col text-center sm:text-left max-w-xl">
         <h1 className="font-extrabold text-4xl sm:text-6xl mb-2">
-          Hi, I'm Kevin Klatt
+          Hi, I&apos;m Kevin Klatt
         </h1>
         <p className="text-lg sm:text-2xl text-gray-600 italic mb-4">
           Full-Stack Engineer • 3D x Web
@@ -28,12 +29,12 @@ export default function Home() {
 
         {/* cta */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center sm:justify-start">
-          <a
+          <Link
             href="/projects"
             className="bg-yellow-400 text-black font-bold px-6 py-3 rounded-lg hover:bg-yellow-500 border-b-8 border-yellow-500"
           >
             View Projects
-          </a>
+          </Link>
         </div>
 
         <Socials />
