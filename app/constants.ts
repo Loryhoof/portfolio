@@ -98,7 +98,7 @@ export const PROJECTS: ProjectData[] = [
     thumbnail_image: "/projects/bonkers.jpg",
     images: [],
     year: 2024,
-    technologies: ["TypeScript", "Three.js", "Node.js", "Rust"],
+    technologies: ["TypeScript", "Three.js", "Node.js", "Rust", "WebAssembly"],
     path: "bonkers",
     description: {
       sections: [
@@ -133,7 +133,7 @@ export const PROJECTS: ProjectData[] = [
     thumbnail_image: "/projects/cuti.jpg",
     images: [],
     year: 2023,
-    technologies: ["React", "Next.js", "Node.js", "Tailwind", "LLMs"],
+    technologies: ["React", "Next.js", "Node.js", "Tailwind", "LLMs", "Stripe"],
     path: "cuti",
     description: {
       sections: [
@@ -184,6 +184,7 @@ export const PROJECTS: ProjectData[] = [
       "Tailwind",
       "Stable Diffusion",
       "LLMs",
+      "Stripe",
     ],
     path: "portraitaiart",
     description: {
@@ -199,11 +200,11 @@ export const PROJECTS: ProjectData[] = [
         },
         {
           contentType: "text",
-          content: `I built the frontend with React/Next.js and Tailwind for a fast and responsive UI. The backend ran on Node.js and integrated image generation pipelines using models like Stable Diffusion. I also implemented automated photo cleanup and deletion policies to ensure user privacy and security.`,
+          content: `I built the frontend with React/Next.js and Tailwind for a fast and responsive UI. The backend ran on Node.js and integrated image generation pipelines using models like Stable Diffusion. For payments, I integrated Stripe, handling subscriptions and one-time purchases securely.`,
         },
         {
           contentType: "text",
-          content: `The project gave me experience in building SaaS applications from scratch, integrating AI generation workflows, and handling payments and user management for a consumer-facing product.`,
+          content: `The project gave me experience in building SaaS applications from scratch, integrating AI generation workflows, payment systems, and user management for a consumer-facing product.`,
         },
       ],
     },
