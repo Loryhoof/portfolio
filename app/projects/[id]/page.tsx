@@ -89,7 +89,7 @@ export default function ProjectPage() {
                 className="flex flex-col sm:flex-row gap-1 sm:gap-2"
                 key={index}
               >
-                <p className="font-normal">{link.label}:</p>
+                <p className="font-normal">{link.label}</p>
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
