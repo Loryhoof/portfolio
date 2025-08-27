@@ -312,10 +312,6 @@ export const PROJECTS: ProjectData[] = [
     },
     links: [
       {
-        label: "Live link:",
-        url: "http://kevinklatt.de",
-      },
-      {
         label: "GitHub Project:",
         url: "https://github.com/Loryhoof/portfolio",
       },
