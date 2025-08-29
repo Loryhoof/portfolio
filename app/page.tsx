@@ -20,7 +20,7 @@ export default function Home() {
           Full-Stack Engineer • 3D x Web
         </p>
         <p className="text-lg sm:text-xl mb-6">
-          With over <span className="font-semibold">4 years</span> of
+          With over <span className="font-semibold">3 years</span> of
           experience, I specialize in{" "}
           <span className="font-semibold">React</span>,{" "}
           <span className="font-semibold">TypeScript</span>, and{" "}
