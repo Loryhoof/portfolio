@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Socials from "./components/Socials";
+import { IoMdDownload } from "react-icons/io";
 
 export default function Home() {
   return (
@@ -27,7 +28,7 @@ export default function Home() {
           <span className="font-semibold">Three.js</span>.
         </p>
 
-        {/* cta */}
+        {/* CTAs */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center sm:justify-start">
           <Link
             href="/projects"
@@ -35,6 +36,17 @@ export default function Home() {
           >
             View Projects
           </Link>
+
+          {/* Resume Button */}
+          <a
+            href="https://drive.google.com/file/d/1TfcQnHIUeo2K6Wb5df4JEPmRjULcCTMv/view?usp=drive_link"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center gap-2 bg-gray-800 text-white font-bold px-6 py-3 rounded-lg hover:bg-gray-700"
+          >
+            <IoMdDownload className="text-xl" />
+            Resume / CV
+          </a>
         </div>
 
         <Socials />
