@@ -2,6 +2,58 @@ import { ProjectData } from "./types/types";
 
 export const PROJECTS: ProjectData[] = [
   {
+    name: "Chatapp",
+    thumbnail_description: "A real-time chat application written in Go",
+    thumbnail_image: "/projects/chatapp.png",
+    images: [],
+    year: 2025,
+    technologies: [
+      "Go",
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind",
+      "SQLite",
+      "WebSockets",
+    ],
+    path: "chatapp",
+    description: {
+      sections: [
+        {
+          contentType: "text",
+          content: `Chatapp is a small real-time chat app I built while learning Go. I wanted to see how Go feels in practice and ended up with a working backend and frontend that talk over WebSockets.`,
+        },
+        { contentType: "image", content: "/projects/chatapp.png" },
+        {
+          contentType: "text",
+          content: `The backend is written in Go and uses channels and goroutines to manage multiple clients at the same time. It handles WebSocket connections, basic JWT authentication, and saves messages into a SQLite database.`,
+        },
+        {
+          contentType: "text",
+          content: `The frontend is built with Next.js, TypeScript, and Tailwind. It connects to the Go server over WebSockets and shows live messages, user nicknames, and colors in a minimal chat interface.`,
+        },
+        {
+          contentType: "text",
+          content: `This project was mainly about me experimenting with Go. Along the way I learned how useful channels and goroutines can be for handling concurrent work, and I found out I actually enjoy writing Go.`,
+        },
+      ],
+    },
+    links: [
+      {
+        label: "Demo",
+        url: "https://chatapp-amber-nine.vercel.app/",
+      },
+      {
+        label: "GitHub (Frontend)",
+        url: "https://github.com/Loryhoof/chatapp",
+      },
+      {
+        label: "GitHub (Backend)",
+        url: "https://github.com/Loryhoof/webserver",
+      },
+    ],
+  },
+  {
     name: "Kubegame",
     thumbnail_description: "A multiplayer sandbox game",
     thumbnail_image: "/projects/kube.jpg",
@@ -111,7 +163,7 @@ export const PROJECTS: ProjectData[] = [
       sections: [
         {
           contentType: "text",
-          content: `Bonkers is a first-person survival game inspired by the game called Rust. The idea was to build a proper survival experience directly in the browser, complete with infinite terrain, resource gathering, and survival mechanics. It’s one of the most technically challenging projects I’ve worked on so far.`,
+          content: `Bonkers is a first-person survival game inspired by the game called Rust. The idea was to build a proper survival experience directly in the browser, complete with infinite terrain, resource gathering, and survival mechanics. It\'s one of the most technically challenging projects I\'ve worked on so far.`,
         },
         { contentType: "image", content: "/projects/bonkers.jpg" },
         { contentType: "image", content: "/projects/bonkers_2.jpg" },
@@ -310,7 +362,7 @@ export const PROJECTS: ProjectData[] = [
       sections: [
         {
           contentType: "text",
-          content: `This is the personal portfolio website I built to showcase my projects, skills, and experience. It’s designed to be simple, fast, and easy to navigate, while still being visually appealing.`,
+          content: `This is the personal portfolio website I built to showcase my projects, skills, and experience. It\'s designed to be simple, fast, and easy to navigate, while still being visually appealing.`,
         },
         { contentType: "image", content: "/projects/portfolio.png" },
         {
