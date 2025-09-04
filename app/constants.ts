@@ -2,6 +2,52 @@ import { ProjectData } from "./types/types";
 
 export const PROJECTS: ProjectData[] = [
   {
+    name: "RoomSketch",
+    thumbnail_description: "A 2D floor planner with real-time 3D preview",
+    thumbnail_image: "/projects/roomsketch_thumb.png",
+    images: [],
+    year: 2025,
+    technologies: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Three.js",
+      "React Three Fiber",
+      "Tailwind",
+      "Zustand",
+    ],
+    path: "roomsketch",
+    description: {
+      sections: [
+        {
+          contentType: "text",
+          content: `RoomSketch is a small tech demo I built to explore interactive floor planning in 2D with real-time 3D visualization. It started as a simple prototype but grew into a functional planner where you can draw, resize, and edit room layouts directly in the browser.`,
+        },
+        { contentType: "image", content: "/projects/roomsketch2d_1.png" },
+        {
+          contentType: "text",
+          content: `The 2D mode is written in React with SVG and Zustand for state management. Users can drag vertices, add points by double-clicking edges, and see wall lengths in real-time, all aligned to a customizable grid.`,
+        },
+        { contentType: "image", content: "/projects/roomsketch3d_1.png" },
+        { contentType: "image", content: "/projects/roomsketch3d_2.png" },
+        {
+          contentType: "text",
+          content: `The 3D mode uses Three.js and React Three Fiber to render walls, floor, and the full layout in real-time. Switching between 2D and 3D views is instant, letting users edit a plan and immediately preview it as a 3D model. They can also export it directly as a GLB/GLTF file.`,
+        },
+        {
+          contentType: "text",
+          content: `This project was built as a proof-of-concept but demonstrates a full stack of modern web tools for interactive design. It could easily be extended with texture mapping, AI-assisted planning, or export to CAD formats.`,
+        },
+      ],
+    },
+    links: [
+      {
+        label: "Demo",
+        url: "https://client-demo-two.vercel.app/",
+      },
+    ],
+  },
+  {
     name: "Chatapp",
     thumbnail_description: "A real-time chat application written in Go",
     thumbnail_image: "/projects/chatapp.png",
