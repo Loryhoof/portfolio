@@ -9,6 +9,7 @@ export default function Footer() {
   const [buttonText, setButtonText] = useState<string>("View Projects");
   const path = usePathname();
   const router = useRouter();
+  //
 
   const handleButtonClick = () => {
     if (path == "/") router.push("/projects");
