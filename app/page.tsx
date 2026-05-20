@@ -21,7 +21,7 @@ export default function Home() {
           Full-Stack Engineer • 3D x Web
         </p>
         <p className="text-lg sm:text-xl mb-6">
-          With over <span className="font-semibold">4 years</span> of
+          With over <span className="font-semibold">5 years</span> of
           experience, I specialize in{" "}
           <span className="font-semibold">React</span>,{" "}
           <span className="font-semibold">TypeScript</span>, and{" "}
@@ -39,7 +39,7 @@ export default function Home() {
 
           {/* Resume Button */}
           <a
-            href="https://drive.google.com/file/d/1TfcQnHIUeo2K6Wb5df4JEPmRjULcCTMv/view?usp=drive_link"
+            href="https://drive.google.com/file/d/1nXH57rlzj0lvm_Uyy3MfTeY2eSzOi0vm/view?usp=drive_link"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center gap-2 bg-gray-800 text-white font-bold px-6 py-3 rounded-lg hover:bg-gray-700"
