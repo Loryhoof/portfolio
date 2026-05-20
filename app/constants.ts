@@ -112,6 +112,66 @@ export const PROJECTS: ProjectData[] = [
     ],
   },
   {
+    name: "xArena",
+    thumbnail_description: "A competitive 1v1 arena shooter for the web",
+    thumbnail_image: "/projects/xArena.jpg",
+    images: [],
+    year: 2026,
+    technologies: [
+      "TypeScript",
+      "React",
+      "Vite",
+      "Three.js",
+      "Rapier3D",
+      "WebSockets",
+      "PostgreSQL",
+    ],
+    path: "xarena",
+    description: {
+      sections: [
+        {
+          contentType: "text",
+          content: `xArena is a fast 1v1 arena shooter for the web built by a small team. It started in early May 2026 and was designed as a lightweight competitive shooter that people could try instantly in the browser, with X users as the initial go-to-market wedge.`,
+        },
+        { contentType: "image", content: "/projects/xArena.jpg" },
+        {
+          contentType: "text",
+          content: `The main mode is ranked 1v1. Players queue into serious duels, climb through ranks, and gain or lose Elo based on match results. The whole game is built around short, intense matches where aim, movement, and positioning matter more than unlocks or progression systems.`,
+        },
+        {
+          contentType: "text",
+          content: `There is also a casual warmup mode where players can just jump in and shoot each other without the pressure of a ranked match. It works more like a free-for-all practice space: useful for testing weapons, warming up aim, or just messing around before playing the serious 1v1 mode.`,
+        },
+        {
+          contentType: "text",
+          content: `A big part of the product is making duels easy to share. Players can invite friends with lobby links and play direct head-to-head matches instead of always going through ranked matchmaking. That made the game feel more social and gave it a natural loop for sharing on X.`,
+        },
+        {
+          contentType: "text",
+          content: `The networking is server-authoritative, with the game server owning the important simulation state instead of trusting the client. The client and server both run class-based game runtimes, both initialize Rapier physics, and the shared package keeps protocol and config code consistent between them.`,
+        },
+        {
+          contentType: "text",
+          content: `The stack is split into a Vite/React/Tailwind/Three.js client, a Node + TypeScript WebSocket game server using ws, and shared TypeScript code for protocol and runtime constants. Postgres backs the database-driven parts of the app, including ranked history, lobbies, and replay metadata, while the game server focuses on low-latency match simulation.`,
+        },
+        {
+          contentType: "text",
+          content: `xArena also has replay support for ranked matches and lobby duels. Replays are stored in S3-compatible object storage and can be watched back later, which is useful for reviewing close fights, sharing highlights, or checking what happened in a match after the fact.`,
+        },
+        {
+          contentType: "text",
+          content: `The project already works and is playable at xArena.io. Even in its early version, it includes the core loop I wanted: join quickly, warm up, challenge a friend, play a ranked 1v1, and rewatch old matches when something interesting happens.`,
+        },
+      ],
+    },
+    links: [
+      {
+        label: "Play",
+        url: "https://xarena.io/",
+      },
+    ],
+  },
+  {
     name: "RoomSketch",
     thumbnail_description: "A 2D floor planner with real-time 3D preview",
     thumbnail_image: "/projects/roomsketch_thumb.png",
