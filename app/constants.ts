@@ -2,6 +2,116 @@ import { ProjectData } from "./types/types";
 
 export const PROJECTS: ProjectData[] = [
   {
+    name: "Kubeverse",
+    thumbnail_description:
+      "AI-powered 3D multiplayer game creation platform",
+    thumbnail_image: "/projects/kubeverse.jpg",
+    images: [],
+    year: 2026,
+    technologies: [
+      "TypeScript",
+      "Three.js",
+      "React",
+      "WebSockets",
+      "AI",
+      "3D Generation",
+      "Multiplayer",
+    ],
+    path: "kubeverse",
+    description: {
+      sections: [
+        {
+          contentType: "text",
+          content: `Kubeverse is an AI-powered game creation platform I worked on for making 3D multiplayer games directly in the browser. The idea was to let someone go from a rough game idea to a playable shared world without needing to code everything from scratch or open a traditional 3D modeling tool.`,
+        },
+        { contentType: "image", content: "/projects/kubeverse.jpg" },
+        {
+          contentType: "text",
+          content: `Instead of being one game, Kubeverse is the platform underneath many games: a place where creators can generate assets, build worlds, add mechanics, test with other players, and publish a link people can join instantly. It takes the game systems I have spent years experimenting with and turns them into tools other people can build with.`,
+        },
+        {
+          contentType: "text",
+          content: `A big part of the project is keeping the experience lightweight. Kubeverse runs on desktop and mobile in the browser, so players do not need to download anything or install a client. You can send someone a world link and they can jump in, which makes playtesting and sharing feel much closer to sending a website than shipping a game build.`,
+        },
+        {
+          contentType: "text",
+          content: `The creator side was built around speed. The goal was that someone could build, playtest, and publish in one session. Casual creators got a visual editor for placing objects, editing terrain, switching between edit mode and play mode, and wiring simple interactions together. The platform was also designed with an SDK-style path for more advanced creators who wanted deeper custom game logic.`,
+        },
+        {
+          contentType: "text",
+          content: `The thing I cared about most was that the games should actually be fun to play. A lot of UGC platforms end up producing static worlds, asset galleries, or walking simulators with generic interactions. I built Kubeverse around reusable gameplay systems, so creators could start from mechanics that already felt good instead of trying to rebuild vehicles, combat, AI, physics, and multiplayer networking on their own.`,
+        },
+        {
+          contentType: "text",
+          content: `The current engine already includes real-time WebSocket multiplayer, a world browser, FPS-style combat with weapons and inventory, explosions, physics-based driving and flight, NPC behavior, pathfinding, and procedural terrain with biome support. All of that is meant to become a shared foundation creators can reuse across very different game ideas.`,
+        },
+        {
+          contentType: "text",
+          content: `AI was used where it helped creators move faster, but the goal was never to let it replace game feel. The gameplay systems were still hand-tuned. AI helped with generating assets and the larger world-generation direction, while the vehicle handling, combat, physics, NPCs, and interaction systems were built manually so the result played well instead of only looking interesting in a screenshot.`,
+        },
+        {
+          contentType: "text",
+          content: `One of the working AI features is text-to-mesh generation. You can describe an object in plain language and get a 3D model back, then drop it straight into a world. These examples are generated objects from the platform: a house, a castle, and a snowman.`,
+        },
+        { contentType: "image", content: "/projects/kubeverse-house.png" },
+        { contentType: "image", content: "/projects/kubeverse-castle.png" },
+        { contentType: "image", content: "/projects/kubeverse-snowman.png" },
+        {
+          contentType: "text",
+          content: `The next big step is text-to-world generation. Instead of generating a single object, the creator should be able to describe the game they want, like a parkour obstacle course or a 10v10 battlefield, and get a playable multiplayer world with the right terrain, layout, objects, and rules. That is the part of the project that connects the AI layer directly to the game engine.`,
+        },
+        { contentType: "image", content: "/projects/kubeverse-world-gen-before.png" },
+        {
+          contentType: "text",
+          content: `The visual editor became a big part of the workflow. Creators could edit terrain, place objects, move and scale assets, use generated meshes or library assets, and immediately switch back into play mode to test what they had just changed. The target was a loop fast enough that building a world felt more like sketching than compiling.`,
+        },
+        { contentType: "image", content: "/projects/kubeverse-terrain-carve.gif" },
+        { contentType: "image", content: "/projects/kubeverse-editor-placement.gif" },
+        {
+          contentType: "text",
+          content: `There is also a visual logic layer for simple trigger-to-action behavior. That is meant for creators who want to make interactive worlds without writing code, while still leaving room for more advanced scripting later. The platform should be approachable first, but not boxed in once someone wants to build more complicated game rules.`,
+        },
+        {
+          contentType: "text",
+          content: `To prove out the platform, I also built a flagship demo game called CrookTown. It is a GTA-style multiplayer open-world game made with the same systems that creators got access to: generated cities, multiple biomes, drivable cars, flyable planes, AI traffic, pedestrians, missions, and open-world chaos.`,
+        },
+        { contentType: "image", content: "/projects/kubeverse-desert-flight.gif" },
+        { contentType: "image", content: "/projects/kubeverse-city-drive.gif" },
+        { contentType: "image", content: "/projects/kubeverse-walk-grass.gif" },
+        {
+          contentType: "text",
+          content: `CrookTown is useful because it forces the platform to be real. If driving feels bad, if flight is boring, if NPCs are lifeless, or if multiplayer sync falls apart, that becomes obvious immediately in the demo game. Building the flagship game alongside the editor keeps the tools grounded in actual gameplay instead of becoming a nice-looking sandbox with nothing to do.`,
+        },
+        {
+          contentType: "text",
+          content: `The planned economy was cosmetics-only. Paid items were meant to stay visual instead of making players stronger or turning creator worlds into pay-to-win games. The idea was to use Koins as a cross-world currency for things like weapon skins, vehicle skins, clothing, accessories, and creator-made cosmetic items, with revenue sharing for creators who sold items in their worlds.`,
+        },
+        {
+          contentType: "text",
+          content: `I worked on Kubeverse from August 2025, and the version shown here reached a live alpha. The roadmap at that stage was to push text-to-world generation further, launch the Koins economy, expand the creator tools, and add the Creator SDK for people who wanted to write deeper custom logic.`,
+        },
+        {
+          contentType: "text",
+          content: `This was easily one of the most technically challenging things I worked on because it combined a web game engine, multiplayer infrastructure, AI generation, editor UX, publishing, and a creator economy direction into one product. A lot of the work was shaped by live feedback from Discord and X, with features tested directly against what creators were actually trying to build.`,
+        },
+      ],
+    },
+    links: [
+      {
+        label: "Live Alpha",
+        url: "https://www.kubeverse.com/",
+      },
+      {
+        label: "X",
+        url: "https://x.com/kubeverse_",
+      },
+      {
+        label: "Discord",
+        url: "https://discord.gg/WrmQpFN5um",
+      },
+    ],
+  },
+  {
     name: "RoomSketch",
     thumbnail_description: "A 2D floor planner with real-time 3D preview",
     thumbnail_image: "/projects/roomsketch_thumb.png",
@@ -158,7 +268,7 @@ export const PROJECTS: ProjectData[] = [
     ],
   },
   {
-    name: "CrookTown",
+    name: "CrookTown (2022)",
     thumbnail_description: "A GTA-inspired sandbox game",
     thumbnail_image: "/projects/crook.jpg",
     images: [],
